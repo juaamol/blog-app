@@ -12,9 +12,8 @@ type Props = {
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
-      src={src}
+      src={`./${src}`}
       alt={`Cover Image for ${title}`}
-      loader={exportedImageLoader}
       className={cn('shadow-sm w-full', {
         'hover:shadow-lg transition-shadow duration-200': slug,
       })}
