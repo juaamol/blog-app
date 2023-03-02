@@ -8,10 +8,6 @@ type Props = {
   slug?: string;
 };
 
-const customLoader = ({ src }) => {
-  return src;
-};
-
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
@@ -20,7 +16,6 @@ const CoverImage = ({ title, src, slug }: Props) => {
       className={cn('shadow-sm w-full', {
         'hover:shadow-lg transition-shadow duration-200': slug,
       })}
-      loader={customLoader}
       width={1300}
       height={630}
     />
