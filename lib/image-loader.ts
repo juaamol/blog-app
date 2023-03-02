@@ -1,3 +1,3 @@
 export default function imageLoader({ src }) {
-  return src;
+  return `blog-app${src}`;
 }
