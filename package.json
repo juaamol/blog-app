@@ -4,6 +4,7 @@
     "dev": "next",
     "build": "next build",
     "build:export": "next build && next export",
+    "export": "next export",
     "start": "next start",
     "typecheck": "tsc"
   },
